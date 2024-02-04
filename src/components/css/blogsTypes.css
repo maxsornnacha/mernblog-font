@@ -1,0 +1,35 @@
+
+.topic{
+   display: none;
+}
+.topicHover{
+    display: inline-block;
+    background-color: rgba(0, 0, 0,.5);
+    width: 100%;
+    animation-name: move;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes move {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.page1-onload{
+    animation-name: page1;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes page1 {
+    from{
+        transform: translateX(100%);
+    }
+}

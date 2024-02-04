@@ -1,0 +1,9 @@
+.cardItem-onload{
+    animation: cardmove 1s 1 ease-out;
+}
+
+@keyframes cardmove {
+    from{
+        transform: translateX(-100%);
+    }
+}   

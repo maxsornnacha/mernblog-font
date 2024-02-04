@@ -1,0 +1,72 @@
+.input {
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgb(114, 115, 116) ;
+    box-sizing: border-box;
+    color:rgb(49, 50, 51)
+  }
+  
+.input:focus {
+    
+    box-shadow: -5px 1px 10px rgb(238, 117, 113) !important;
+    outline: none !important;
+    border:1px solid rgb(252, 152, 152) !important;
+  }
+
+
+
+.firstname{
+    position: relative;
+    top: 1.7rem;
+    left: 2%;
+    background:transparent;
+    width:57px;
+    z-index: 1;
+    padding-left:1%;
+}
+.lastname{
+    background:transparent !important;
+    position: relative;
+    top: 0.1rem;
+    left: 46%;
+    display: inline;
+    width: 64px;
+    z-index: 1;
+    padding-left:0.4%;
+}
+.username{
+    position: relative;
+    top: 0.7rem;
+    left: 5%;
+    background-color: white;
+    width:80px;
+    z-index: 1;
+    padding-left:0%;
+}
+.email{
+    position: relative;
+    top: 0.1rem;
+    left: 2%;
+    background:transparent;
+    width:50px;
+    z-index: 1;
+    padding-left:0%;
+}
+
+
+@media (max-width: 991px) {
+
+    .lastname{
+        background-color: white;
+        position: relative;
+        top: 4.2rem;
+        left: 2%;
+        display: inline;
+        width: 64px;
+        z-index: 1;
+        padding-left:0.4%;
+    }
+}
+
+
+  

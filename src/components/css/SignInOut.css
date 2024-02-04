@@ -1,0 +1,30 @@
+.cover{
+    transition: 2s ease-in-out;
+}   
+.signup-firstpart{
+    animation-name: signupfirstpart;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+
+.signin-secondpart{
+    animation-name: signinsecondpart;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes signupfirstpart {
+    from{
+        transform: translateX(100%)
+    }
+}
+
+
+@keyframes signinsecondpart {
+    from{
+        transform: translateX(-100%)
+    }
+}

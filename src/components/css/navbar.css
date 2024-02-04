@@ -1,0 +1,8 @@
+.dropdown-item:active{
+    background-color: rgb(245, 59, 59);
+    color:white !important;
+}
+
+.nav-link:hover{
+    color: rgb(245, 59, 59) !important;
+}
