@@ -216,7 +216,7 @@ const imageHanddleChange=(event)=>{
     (
         <div className="bg-white row" style={{minHeight:'100vh'}}>
         {profile1 &&
-        <form className="col-lg-6 col-md-6 col-sm-12" style={{display:'flex',flexDirection:'column'}} >
+        <form className="col-lg-6 col-md-6 col-sm-12 mb-5" style={{display:'flex',flexDirection:'column',minHeight:'100vh'}} >
             <h3 className="mb-5 mt-5 text-center"><strong>ข้อมูลส่วนตัว</strong></h3>
             <div className="text-center mb-5"><img src={accountInfo.userImage} style={{height:'150px',width:'150px',borderRadius:'50%',boxShadow:'3px 3px 5px grey'}}/></div>
             <span className="row ms-3 me-5">
@@ -242,7 +242,7 @@ const imageHanddleChange=(event)=>{
         </form>
         }
         {profile2 &&
-      <form className="col-lg-6 col-md-6 col-sm-12" onSubmit={handleEditProfile} style={{ display: 'flex', flexDirection: 'column' }}>
+      <form className="col-lg-6 col-md-6 col-sm-12 mb-5" onSubmit={handleEditProfile} style={{ display: 'flex', flexDirection: 'column',minHeight:'100vh' }}>
         <h3 className="mb-5 mt-5 text-center"><strong>แก้ไขข้อมูลส่วนตัว</strong></h3>
         <div className="text-center mb-2">
           <img src={accountInfoForEdit.userImage} style={{ height: '150px', width: '150px', borderRadius: '50%', boxShadow: '3px 3px 5px grey' }} />

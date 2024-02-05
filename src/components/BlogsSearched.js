@@ -31,8 +31,8 @@ const moreHandle = (event)=>{
   },[props.blogs])
   
     return(
-    <div>
-        <div className="ps-5 pe-5 pb-3 pt-3 text-dark" style={{backgroundColor:'rgba(251,251,251)'}} >
+    <div className="bg-white">
+        <div className="ps-5 pe-5 pb-3 pt-3 text-dark" >
         <h2 style={{textAlign:'center',fontWeight:'bold'}}>
         <span>ผลการค้นหา <img style={{height:'50px'}} src={searching}/></span> 
         </h2>

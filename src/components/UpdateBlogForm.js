@@ -157,7 +157,7 @@ const updataData=  (event)=>{
    
 }
 
-    return(<div>
+    return(<div className='bg-white'>
       <NavbarFormComponent/>
         <div className="container p-5 pt-3">
         {//load ข้อมูลอยู่

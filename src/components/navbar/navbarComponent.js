@@ -44,8 +44,8 @@ const NavbarComponent=(props)=>{
 
 
     return(
-    <div className='sticky-top pb-1'>
-    <div className='bg-light ps-2'>
+    <div className='sticky-top pb-1' style={{width:'100%',minWidth:'100vw',maxWidth:'200vw'}}> 
+    <div className='bg-white ps-2'>
         <nav className='navbar navbar-expand-lg navbar-light'>
             <Link to='/' className='navbar-brand mt-2'><h2>&nbsp;&nbsp;LOGO|<span className='text-danger'>B</span>log&nbsp;&nbsp;</h2></Link>
             <button className='navbar-toggler' type='button' data-bs-toggle="collapse" data-bs-target="#show" aria-controls='navbarNav'

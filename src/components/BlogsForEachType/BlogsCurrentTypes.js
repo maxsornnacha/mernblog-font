@@ -71,7 +71,7 @@ const CurrentBlogs=(props)=>{
   }
 
     return(
-        <div>
+        <div className='bg-white'>
         {//load ข้อมูลอยู่
         loading?(
             <div>
@@ -89,7 +89,7 @@ const CurrentBlogs=(props)=>{
           ):(
             //load สำเร็จ
             <div>
-            <div className="ps-5 pe-5 pb-3 pt-3 text-dark" style={{backgroundColor:'rgba(251,251,251)'}} >
+            <div className="ps-5 pe-5 pb-3 pt-3 text-dark" >
             <h2 style={{textAlign:'center',fontWeight:'bold'}}>
             <span>บทความประเภท{props.type}</span> 
             </h2>

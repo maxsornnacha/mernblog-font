@@ -49,7 +49,7 @@ const MemberManage=()=>{
     },[])
 
     return(
-    <div className="text-bg-light" style={{minHeight:'100vh',height:'100%'}}>
+    <div className="bg-white" style={{minHeight:'100vh',height:'100%'}}>
     <NavbarComponent/>
         <div className="container">
         <div className="pt-5 pb-4" style={{textAlign:'center'}}>

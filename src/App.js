@@ -24,7 +24,7 @@ function App() {
   
 
   return (
-    <div style={{width:'100%'}}>
+    <div style={{width:'100%'}} className="bg-white">
       <NavbarComponent dataGet={state} sending={dataFromChild}/>
     {/* ยังไม่ได้ค้นหาหรือค้นหาบทความไม่เจอ */}
     {filter.length === state.length &&
@@ -55,8 +55,10 @@ function App() {
     </div>
     </div>
     } 
+    <div>
     <FooterComponent/> {/*Footer*/}
     <CopyRight/> {/*CopyRight*/}
+    </div>
     </div>
   );
 }

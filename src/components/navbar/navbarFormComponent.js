@@ -38,9 +38,9 @@ const NavbarComponent=()=>{
     },[])
     
     return(
-    <div className='sticky-top pb-1'>
+        <div className='sticky-top pb-1' style={{width:'100%',minWidth:'100vw',maxWidth:'200vw'}}> 
     <div className=''>
-        <nav className='navbar navbar-expand-md navbar-light bg-light'>
+        <nav className='navbar navbar-expand-md navbar-light bg-white'>
             <Link to='/' className='navbar-brand mt-2'><h2>&nbsp;&nbsp;LOGO|<span className='text-danger'>B</span>log&nbsp;&nbsp;</h2></Link>
             <button className='navbar-toggler' type='button' data-bs-toggle="collapse" data-bs-target="#show" aria-controls='navbarNav'
             aria-expanded='false' aria-label='Toggle navigation'>

@@ -168,7 +168,7 @@ const Content=(event)=>{
     })
  }
 
-    return(<div>
+    return(<div className="bg-white">
       <NavbarFormComponent/>
     <div className="container p-5 pt-3">
          <h2 className="mt-3 mb-3" style={{textAlign:'center'}}><strong>เขียนบทความ</strong></h2>
