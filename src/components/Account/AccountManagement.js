@@ -246,7 +246,7 @@ const imageHanddleChange=(event)=>{
         <h3 className="mb-5 mt-5 text-center"><strong>แก้ไขข้อมูลส่วนตัว</strong></h3>
         <div className="text-center mb-2">
           <img src={accountInfoForEdit.userImage} style={{ height: '150px', width: '150px', borderRadius: '50%', boxShadow: '3px 3px 5px grey' }} />
-          <div><input type="file" onChange={imageHanddleChange} className="text-bg-dark mt-3 text-center" style={{borderRadius:'5px'}}/></div>
+          <div style={{display:'flex',justifyContent:'center'}}><input type="file" onChange={imageHanddleChange} className="form-control text-bg-dark mt-3 w-50" style={{borderRadius:'5px'}}/></div>
         </div>
         <label className="firstname" >ชื่อจริง</label>
         <label className="lastname" >นามสกุล</label>
