@@ -50,16 +50,16 @@ const FooterComponent =()=>{
 
     return(
     <div>
-    <div className="text-bg-dark mt-5 pt-5 pb-5" style={{minHeight:'40vh',height:'100%'}}>
-        <div className="row ps-5 pt-5 pb-5">
+    <div className="bg-white text-dark border-top box-shadow mt-5 pt-5 pb-5" style={{minHeight:'40vh',height:'100%'}}>
+        <div className="row m-0 ps-5 pt-5 pb-5">
             <div className="col-lg-6 col-md-6 col-sm-12 ">
-                <h4 className="pb-3">Sending your email below here for new notifiations or news</h4>
+                <h5 className="pb-3">Sending your email below here for new notifiations or news</h5>
             <form onSubmit={handleSendingEmail}>
-                <input className="w-75 ps-1 pt-1 pb-1" type="email" onChange={(event)=>setEmail(event.target.value)} value={email} placeholder="กรุณาป้อนอีเมลเพื่อรับข่าวสารใหม่ๆ" 
+                <input className="w-75 border border-muted p-1" type="email" onChange={(event)=>setEmail(event.target.value)} value={email} placeholder="กรุณาป้อนอีเมลเพื่อรับข่าวสารใหม่ๆ" 
                 style={{fontSize:'0.88rem',borderTopLeftRadius:'8px',borderBottomLeftRadius:'8px',border:'1px solid white'}}
                 />
-                <input id='footersubmit' className="text-bg-danger border border-danger" type="submit" value="Submit"
-                style={{borderTopRightRadius:'8px',borderBottomRightRadius:'8px',padding:'0.19rem'}}
+                <input id='footersubmit' className="text-bg-danger border border-danger p-1" type="submit" value="Submit"
+                style={{borderTopRightRadius:'8px',borderBottomRightRadius:'8px',padding:'0rem'}}
                 />
             </form>
             </div>

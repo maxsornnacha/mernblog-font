@@ -214,29 +214,29 @@ const imageHanddleChange=(event)=>{
     )
     :
     (
-        <div className="bg-white row" style={{minHeight:'100vh'}}>
+        <div className="bg-white row m-0" style={{minHeight:'100vh'}}>
         {profile1 &&
         <form className="col-lg-6 col-md-6 col-sm-12 mb-5" style={{display:'flex',flexDirection:'column',minHeight:'100vh'}} >
             <h3 className="mb-5 mt-5 text-center"><strong>ข้อมูลส่วนตัว</strong></h3>
             <div className="text-center mb-5"><img src={accountInfo.userImage} style={{height:'150px',width:'150px',borderRadius:'50%',boxShadow:'3px 3px 5px grey'}}/></div>
-            <span className="row ms-3 me-5">
+            <span className="row m-0 ms-3 me-5">
                 <div className="col-lg-6 bg-white pt-2 pb-1  mb-3" style={{borderBottom:'1px solid rgb(114, 115, 116)',textTransform:'capitalize'}}><h5><strong>ชื่อจริง:</strong> {accountInfo.firstname}</h5></div>
                 <div  className="col-lg-6 bg-white pt-2 pb-1 mb-3" style={{borderBottom:'1px solid rgb(114, 115, 116)',textTransform:'capitalize'}}><h5><strong>นามสกุล:</strong> {accountInfo.lastname}</h5></div>
             </span>
-            <span className="row mb-3 ms-3 me-3">
+            <span className="row m-0 mb-3 ms-3 me-3">
                 <div  className="col-lg-11  bg-white pt-2 pb-2" style={{borderBottom:'1px solid rgb(114, 115, 116)'}}>
                 <h5><strong>ชื่อผู้ใช้งาน:</strong> {accountInfo.username}</h5>
                 </div>
             </span>
-            <span className="row mb-3 ms-3 me-3">
+            <span className="row m-0 mb-3 ms-3 me-3">
                  <div className="col-lg-11 bg-white pt-2 pb-2" style={{borderBottom:'1px solid rgb(114, 115, 116)'}}>
                 <h5><strong>อีเมล:</strong> {accountInfo.email}</h5>
                 </div>
             </span>
-            <span className="row ms-3 me-5 mt-4">
+            <span className="row m-0 ms-3 me-5 mt-4">
                 <button className="btn btn-danger" onClick={ReturnToProfile2}>แก้ไขข้อมูลส่วนตัว</button>
             </span>
-            <span className="row ms-3 me-5 mt-4">
+            <span className="row m-0 ms-3 me-5 mt-4">
                 <Link to='/change/password' className="btn btn-outline-dark">เปลี่ยนรหัสผ่าน</Link>
             </span>
         </form>

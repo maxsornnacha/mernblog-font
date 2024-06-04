@@ -1,3 +1,88 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+XRV81U71DQUZS8LYBF9S9RCM
+
+
+  if (typeof window !== 'undefined') {
+    // Check if the browser is running in standalone mode
+    useEffect(()=>{
+      const isRunningFromHomeScreen = window.navigator.standalone;
+      if (isRunningFromHomeScreen) {
+      // Web application is running from the home screen on iOS
+      setIsRunningFromHomeScreen('yes');
+      } else {
+      // Web application is running in a browser
+      setIsRunningFromHomeScreen('no');
+      }
+      } ,[])
+  }
+
+
+
+     <div className={` ${isRunningFromHomeScreen === 'no'?'block md:hidden':'hidden'} `}>
+          <div className="bg-[#161617] h-[86vh] text-white flex flex-col items-center justify-between">
+                <div className="flex flex-col items-center w-full">
+                  <div className="self-start px-2 pt-2 text-[0.8rem]">
+                      <button onClick={()=>{setEngLanguage(true);}} className={`p-2 ${engLanguage?'bg-purple-600':'bg-purple-400'} `}>
+                          English
+                      </button>
+                      <button onClick={()=>{setEngLanguage(false);}} className={`p-2 ${engLanguage?'bg-purple-400':'bg-purple-600'}`}>
+                          ภาษาไทย
+                      </button>
+                  </div>
+
+                  <div className="py-4 flex flex-col items-center gap-2">
+                  <div>{engLanguage?'TalkToGo only supports for Home Screen of Safari IOS':'TalkToGo ให้บริการที่หน้าจอโฮมของ Safari IOS เท่านั้น'}</div>
+                  <div className="flex gap-2">
+                  <img src="logo.jpg" className="w-14 h-14 rounded-md"/>
+                  <img src="safari.png" className="w-14 h-14 p-1 bg-white rounded-md"/>
+                  </div>
+                  </div>
+
+                  <div className="py-4 w-10/12">
+                    <div className="text-center text-violet-400">
+                    {engLanguage?'IOS Settings (Session Access)':'การตั้งค่าใน IOS เพื่อขออนุญาติการติดตามเซสชั่น'}
+                    </div>
+                    <div>Settings {'>'} Safari {'>'} Turn off Pervent Cross-Site Tracking</div>
+                  </div>
+
+                </div>
+
+                <div className="animate-bounce flex flex-col items-center">
+                    <div>{engLanguage?'Add to Home Screen here':'เพิ่มหน้าจอโฮมที่นี่'}</div>
+                    <FontAwesomeIcon icon={faArrowDown} className="w-20 h-20"/>
+                </div>
+          </div>
+      </div>
+
+
+
+คนที่เข้ามาจะ connected 
+ส่วนคนที่อยู่ในห้องอยู่แล้วจะ connected to the user number 1
+
+
+---------------------------------------------------------------------
+
+
+user1 join room    X no peer created
+
+user2 join room  => user1 create init-peer send offer to me(user2) > me answer send to user1  > user1 accept
+
+user3 join room => user1,2 create init-peer send offers to me(user3) > me answer send to user1,2 > user1,2 accept
+
+
+Sornncha (66356190de56a4459029be9f)
+6635dfac6ce9d1c15594f4fe
+66356190de56a4459029be9f
+66356190de56a4459029be9f
+
+Member
+66356190de56a4459029be9f
+6635dfac6ce9d1c15594f4fe
+6635dfac6ce9d1c15594f4fe
+
+
+             if(user._id !== me){}

@@ -26,7 +26,7 @@ const Index=()=>{
 
 
     return(
-        <div style={{width:'100%'}} className='bg-white'>
+        <div  className='bg-white'>
         <NavbarComponent dataGet={state} sending={dataFromChild}/>
 
       {/* ยังไม่ได้ค้นหาหรือค้นหาบทความไม่เจอ */}

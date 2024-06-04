@@ -24,7 +24,7 @@ function App() {
   
 
   return (
-    <div style={{width:'100%'}} className="bg-white">
+    <div className="bg-light">
       <NavbarComponent dataGet={state} sending={dataFromChild}/>
     {/* ยังไม่ได้ค้นหาหรือค้นหาบทความไม่เจอ */}
     {filter.length === state.length &&
@@ -32,12 +32,12 @@ function App() {
         <div className="pb-4"><CarouselComponent/></div>
     <div className="mt-5"><BlogsTypes/></div>
     <div className="col-lg-12 col-md-12" style={{margin:'0px',padding:'0px'}}>
-    <div className="container-fluid mt-5" >
+    <div className="mt-5" >
         <BlogsMostVote blogsData={blogsData}/>
     </div>
     </div>
     <div className="col-lg-12 col-md-12" style={{margin:'0px',padding:'0px'}}>
-    <div className="container-fluid mt-5">
+    <div className="mt-5">
         <CurrentBlogs blogsData={blogsData}/>
     </div>
     </div>

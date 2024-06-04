@@ -193,7 +193,7 @@ const updataData=  (event)=>{
                 <ReactQuill theme="snow" onChange={Content} value={content} style={{backgroundColor:'white',color:'black'}}/>
             </div>
 
-            <div className="form-group mt-3 mb-3 row">
+            <div className="form-group mt-3 mb-3 row m-0">
             <label>ประเภทบทความ <span style={{color:'rgb(41, 171, 135)'}}>(เลือกได้มากกว่า 1 ประเภท)</span></label>
             <div className="col-lg-3 col-md-4 col-sm-4">
             <div className="form-check">

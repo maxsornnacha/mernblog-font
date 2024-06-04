@@ -70,23 +70,24 @@ const LoginComponent =()=>{
         })
         .finally(()=>setLoading(false))
      }
-
+     
+     
 
     return(<div className="bg-white">
            <NavbarFormComponent/>
-        <div className="row">
-        <div className="col-lg-6 col-md-12 col-sm-12 mt-5" style={{minHeight:'83vh',height:'100%'}}>
-        <div style={{display:'flex',flexDirection:'column',justifyContent:'center'}}>
-            <div className="mt-5" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-                <h3 className="mt-4 mb-3" style={{textAlign:'center'}}><strong>เข้าสู่ระบบ</strong></h3>
-                <form onSubmit={submitForm} style={{width:'80%'}}>
-                <div className="form-group m-3 mb-4">
+        <div className="row m-0">
+        <div className="col-lg-6 col-md-12 col-sm-12 " style={{height:'89vh'}}>
+        <div className="h-100" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+            <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                <h3 className="mb-3" style={{textAlign:'center'}}>เข้าสู่ระบบ</h3>
+                <form onSubmit={submitForm} className="row d-flex justify-content-center" style={{width:'80%'}}>
+                <div className="form-group my-2 col-md-7 col-lg-10">
                     <input placeholder="ชื่อผู้ใช้" type="text" className="form-control" value={username} onChange={Username}/>
                 </div>
-                <div className="form-group m-3">
+                <div className="form-group my-2m-3 col-md-7 col-lg-10">
                    <input placeholder="รหัสผ่าน" type="password" className="form-control" value={password} onChange={Password}/>
                  </div>
-                <div className="m-3" style={{display:'flex',flexDirection:'column'}}>
+                <div className="my-2 col-md-7 col-lg-10" style={{display:'flex',flexDirection:'column'}}>
                     <input type="submit" value="เข้าสู่ระบบ" className="btn btn-danger mt-3"/>
                     <Link to="/" className="btn btn-dark mt-3 ms-1">ยกเลิก</Link>
                 </div>
@@ -96,7 +97,7 @@ const LoginComponent =()=>{
         </div>
         <div className='col-lg-6 col-md-12 text-bg-danger pb-5 pt-5 signin-secondpart' style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             <div>
-            <div className='ms-5 text-center' style={{fontSize:'3rem'}}>Hello, Friends!</div>
+            <div className='mx- text-center' style={{fontSize:'3rem'}}>Hello, Friends!</div>
             <p className='text-center m-3 ms-5 me-5' style={{fontSize:'1.1rem'}}>Being a part of us by entering your personal details and start 
             journey with us</p>
             </div>

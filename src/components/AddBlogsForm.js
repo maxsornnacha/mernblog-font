@@ -188,7 +188,7 @@ const Content=(event)=>{
             <label>รายละเอียด</label>
             <ReactQuill theme="snow" onChange={Content} value={content} style={{backgroundColor:'white',color:'black',paddingBottom:'5vh',height:"50vh"}}/>
         </div>
-        <div className="form-group mt-3 mb-4 row">
+        <div className="form-group mt-3 mb-4 row m-0">
             <label>ประเภทบทความ <span style={{color:'rgb(41, 171, 135)'}}>(เลือกได้มากกว่า 1 ประเภท)</span></label>
         <div className="col-lg-3 col-md-4 col-sm-4">
             <div className="form-check">

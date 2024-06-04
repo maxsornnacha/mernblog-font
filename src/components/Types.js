@@ -36,12 +36,12 @@ const BlogsTypes = () =>{
    
 
     return(
-    <div className="mt-5 mb-5 ms-2 me-2 container-fluid">
-        <h2 className="" style={{textAlign:'center'}}>ประเภทบทความ</h2>
+    <div className="mt-5 mb-5  container">
+        <h3 className="" style={{textAlign:'center'}}>ประเภทบทความ</h3>
         <div className="mb-3" style={{textAlign:'center'}}>
-        <span className="bg-danger text-danger ps-3 pe-3" style={{borderRadius:'10px',fontSize:'0.8rem'}} >_________________</span>
+        <span className="bg-danger text-danger ps-3 pe-3" style={{borderRadius:'10px',fontSize:'0.5rem'}} >_________________</span>
         </div>
-    <div className="row pt-5 pb-4 page1-onload">
+    <div className="row m-0 pt-5 pb-4 page1-onload">
 
         {/* Page display */}
         {page}

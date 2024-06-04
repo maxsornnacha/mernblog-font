@@ -82,7 +82,7 @@ const MemberManage=()=>{
                 {blogs.map((blog,index)=>{
                    return (
                     <tr key={uuidv4()}>
-                   <th scope="row">{index+1}</th>
+                   <th scope="row m-0">{index+1}</th>
                    <td>
                    <Link className="text-dark" to={'/blog/'+blog.slug} style={{textDecoration:"none"}} key={uuidv4()}>
                     {blog.title}
@@ -90,7 +90,7 @@ const MemberManage=()=>{
                     </td>
                    <td>{thaiDateTrans(blog.createdAt)}</td>
                    {/* เพิ่มอัพเดต กับ ลบ */}
-                   <td style={{textAlign:'center'}}><Link to={'/editMember/'+blog.slug} key={uuidv4()} className="btn btn-danger" style={{width:'100%'}}>แก้ไข</Link></td>
+                   <td style={{textAlign:'center'}}><Link to={'/editMember/'+blog.slug} key={uuidv4()} className="btn btn-danger">แก้ไข</Link></td>
                    <td style={{textAlign:'center'}}><DeleteButtonMember key={uuidv4()} title={blog.title} id={blog._id} updateState={updateState}/></td>
                    </tr>
                    )

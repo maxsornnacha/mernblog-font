@@ -11,7 +11,7 @@ const BlogsTypes = () =>{
 
    
     return(
-    <div className="row">
+    <div className="row m-0">
         <div className="col-lg-3 col-md-6 col-sm-6 mb-4" style={{minHeight:'50vh'}}>
         <Link to='/blogs/ทั่วไป' className='text-decoration-none' onMouseEnter={()=>setIsHover1(true)} onMouseLeave={()=>setIsHover1(false)}>
         <div style={{
@@ -25,7 +25,7 @@ const BlogsTypes = () =>{
                 alignItems:'end'
             }}>
             <div className={isHover1?"topicHover pt-4 pb-4":'topic pt-4 pb-4'} >
-                <h4 className="text-white text-center">ทั่วไป</h4>
+                <h5 className="text-white text-center">ทั่วไป</h5>
             </div>
         </div>
         </Link>
@@ -44,7 +44,7 @@ const BlogsTypes = () =>{
                 alignItems:'end'
             }}>
               <div className={isHover2?"topicHover pt-4 pb-4":'topic pt-4 pb-4'}>
-                <h4 className="text-white text-center" >การท่องเที่ยว</h4>
+                <h5 className="text-white text-center" >การท่องเที่ยว</h5>
             </div>
         </div>
         </Link>
@@ -63,7 +63,7 @@ const BlogsTypes = () =>{
                 alignItems:'end'
             }}>
               <div className={isHover3?"topicHover pt-4 pb-4":'topic pt-4 pb-4'}>
-                <h4 className="text-white text-center" >ให้ความรู้</h4>
+                <h5 className="text-white text-center" >ให้ความรู้</h5>
             </div>
         </div>
         </Link>
@@ -82,7 +82,7 @@ const BlogsTypes = () =>{
                 alignItems:'end'
             }}>
               <div className={isHover4?"topicHover pt-4 pb-4":'topic pt-4 pb-4'}>
-                <h4 className="text-white text-center" >แสดงความคิดเห็น</h4>
+                <h5 className="text-white text-center" >แสดงความคิดเห็น</h5>
             </div>
         </div>
         </Link>

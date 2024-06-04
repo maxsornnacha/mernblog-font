@@ -31,13 +31,13 @@ const moreHandle = (event)=>{
   },[props.blogs])
   
     return(
-    <div className="bg-white">
-        <div className="ps-5 pe-5 pb-3 pt-3 text-dark" >
-        <h2 style={{textAlign:'center',fontWeight:'bold'}}>
-        <span>ผลการค้นหา <img style={{height:'50px'}} src={searching}/></span> 
-        </h2>
+    <div className="bg-light">
+        <div className="pb-3 pt-3 text-dark container" >
+        <h3 style={{textAlign:'center'}}>
+        <span>ผลการค้นหา <img style={{height:'40px'}} src={searching}/></span> 
+        </h3>
         <div className="mb-5"></div>
-        <div className="row">
+        <div className="row m-0">
         {state.length !== 0 && state.map((blog,index)=>{
         return (
           <div className="col-lg-3 col-md-6 col-sm-12 mb-3" key={uuidv4()}>
@@ -48,7 +48,7 @@ const moreHandle = (event)=>{
             </div>
           </Link>
             <div className="card-body pt-2 pb-2 text-dark">
-              <p style={{fontSize:'0.8rem'}}><span>{more? (blog.types).map((item,i)=>{
+              <p style={{fontSize:'0.75rem'}}><span>{more? (blog.types).map((item,i)=>{
                return <span key={uuidv4()}><strong>{item}</strong>{(blog.types).length!==(i+1)?', ':''}</span>
               })
               :
@@ -56,11 +56,11 @@ const moreHandle = (event)=>{
               {(blog.types).length>3?<button key={uuidv4()} style={{border:'0px solid black',backgroundColor:'white'}} onClick={moreHandle}>{more?'...ย่อกลับ':'...เพิ่มเติม'}</button>:''}
                </span> - {thaiDateTrans(blog.createdAt)}</p>
             <Link to={'/blog/'+blog.slug} style={{textDecoration:"none"}} key={uuidv4()}>
-              <h4 className="pb-3 pt-1 text-dark"><strong>{blog.title}</strong></h4>
+              <h6 className="pb-3 pt-1 text-dark"><strong>{blog.title}</strong></h6>
             </Link>
             </div>
             <div className="card-body" style={{display:"flex",justifyContent:"space-between"}}> 
-              <h6 ><img style={{height:'30px',width:'34px',borderRadius:'50%'}} src={blog.accoutimage}/> {capitalizeFirstLetter(blog.author)}</h6>
+              <h6 ><img style={{height:'28px',width:'28px',borderRadius:'50%'}} src={blog.accoutimage}/><span style={{fontSize:'0.8rem'}}> {capitalizeFirstLetter(blog.author)}</span></h6>
             </div>
             {userFetching() &&
             <div className="card-footer" style={{display:"flex",justifyContent:"end"}}>
@@ -75,7 +75,7 @@ const moreHandle = (event)=>{
     }
     {state.length === 0 &&
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',minHeight:'70vh'}}>
-            <h3 className="text-center">ไม่พบบทความ</h3>
+            <h5 className="text-center">ไม่พบบทความ</h5>
     </div>
     }
     </div>

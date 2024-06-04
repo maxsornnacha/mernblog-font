@@ -3,7 +3,7 @@ import NavbarFormComponent from "../navbar/navbarSignInUp"
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import {Link, useNavigate} from 'react-router-dom'
-import userAccount from '../images/userAccount.png'
+import userAccount from '../images/defaultProfile.png'
 import Resizer from "react-image-file-resizer"
 import '../../components/css/loadingApi.css'
 import '../../components/css/SignInOut.css'
@@ -158,10 +158,10 @@ const RegisterComponent = () =>{
     }
 
     return(
-        <div className='bg-white signup cover'>
+        <div className='bg-white signup cover' >
         <NavbarFormComponent/>
-        <div className='row bg-white'>
-        <div className='col-lg-6 col-md-12 text-bg-danger pb-5 pt-5 signup-firstpart  box' style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+        <div className='row m-0' style={{height:'89vh'}}>
+        <div className='col-lg-6 col-md-12 text-bg-danger signup-firstpart box' style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             <div>
             <div className='ms-5 text-center' style={{fontSize:'3rem'}}>Welcome Back!</div>
             <p className='text-center m-3 ms-5 me-5' style={{fontSize:'1.1rem'}}>To keep connected with us, please sign in with your personal information
@@ -169,14 +169,14 @@ const RegisterComponent = () =>{
             </div>
             <Link to="/login" className="btn btn-outline-light mt-2 ps-5 pe-5">เข้าสู่ระบบ</Link>
         </div>
-        <div className="col-lg-6 col-md-12 col-sm-12 signup-secondpart" style={{minHeight:'88vh',height:'100%'}}>
+        <div className="col-lg-6 col-md-12 col-sm-12 signup-secondpart">
         <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-             <h3 className="mt-5 mb-3" style={{textAlign:'center'}}><strong>สร้างบัญชีผู้ใช้งาน</strong></h3>
+             <h3 className="my-4" style={{textAlign:'center'}}>สร้างบัญชีผู้ใช้งาน</h3>
         <form onSubmit={submitForm} style={{width:'90%'}}>
         <div style={{display:'flex',justifyContent:'center'}}>
-        <div className='form-group mt-5 text-center'>
+        <div className='form-group  text-center'>
         <label htmlFor='fileUpload'>
-           <img src={image || userAccount} style={{height:'150px',width:'150px',cursor:'pointer',borderRadius:'50%',boxShadow: '3px 3px 5px grey'}}/>
+           <img src={image || userAccount} style={{height:'100px',width:'100px',cursor:'pointer',borderRadius:'50%',boxShadow: '3px 3px 5px grey'}}/>
            <p className='pt-3'>อัพโหลดรูปภาพบัญชี</p>
         </label>
             <input 
@@ -204,7 +204,7 @@ const RegisterComponent = () =>{
             </div>
             <div className="form-group m-2 mb-3">
                 <input placeholder='รหัสผ่าน' type="text" className="form-control" value={password} onChange={Password}/>
-                <div className="text-danger" style={{fontSize:'0.7rem'}}>&nbsp;จำเป็น* รหัสผ่านต้องมีอย่างน้อย 8 ตัว ประกอบด้วยตัวอักษรภาษาอังกฤษและตัวเลข</div>
+                <div style={{fontSize:'0.7rem'}}>&nbsp;จำเป็น* รหัสผ่านต้องมีอย่างน้อย 8 ตัว ประกอบด้วยตัวอักษรภาษาอังกฤษและตัวเลข</div>
             </div>
             <div className="form-group m-2 mb-3">
                 <input placeholder='ยืนยันรหัสผ่าน'  type="text" className="form-control" value={passwordConfirm} onChange={PasswordConfirm}/>

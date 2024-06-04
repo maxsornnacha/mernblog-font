@@ -68,7 +68,7 @@ useEffect(()=>{
       //load สำเร็จ
       <div>
             <div className='container' style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
-            <div className="col card mt-5" style={{width:'100%'}}>
+            <div className="col card mt-5">
               <div className="pt-3 mb-5" style={{height:"10vh",textAlign:'center'}}>
                 <h1>{blog.title}</h1>
               </div>
@@ -79,15 +79,15 @@ useEffect(()=>{
                   </div>
                 }
               </div>
-              <div className="container-fluid row mt-5" style={{minHeight:"10vh",maxHeight:'auto'}}> 
+              <div className="container-fluid row m-0 mt-5" style={{minHeight:"10vh",maxHeight:'auto'}}> 
                 <p className="text-muted col-lg-6">เขียนโดย: <img style={{height:'40px',width:'45px',borderRadius:'50%'}} src={blog.accoutimage}/> {blog.author}</p>
                 <p className="text-muted col-lg-6">เขียน ณ {thaiDateTrans(blog.createdAt)}</p>
               </div>
             </div>
-            <div className='m-5' style={{width:'100%'}}>
+            <div className='m-5'>
             <CommentComponent slug={blog.slug}/>
             </div>
-            <div style={{width:'100%'}}>
+            <div>
             {commentsGet}
             </div>
             </div>

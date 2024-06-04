@@ -64,7 +64,7 @@ const ManageCarousel=()=>{
                 {ads.map((ads,index)=>{
                    return (
                     <tr key={uuidv4()}>
-                   <th scope="row">{index+1}</th>
+                   <th scope="row m-0">{index+1}</th>
                    <td className='text-center'><img src={ads.image} style={{height:'100px',width:'100px'}}/></td>
                    <td>{ads.topic ===''?'ไม่มีชื่อหัวข้อ':ads.topic}</td>
                    {/* เพิ่มอัพเดต กับ ลบ */}

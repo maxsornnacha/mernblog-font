@@ -91,15 +91,15 @@ const moreHandle = (event)=>{
   
 
     return(
-    <div>
+    <div className='bg-white text-dark'>
     {//load ข้อมูลอยู่
     loading?(
         <div>
-        <div className="ps-5 pe-5 pb-5 pt-3 text-bg-dark">
+        <div className="pb-5 pt-3">
         <div className='mt-5'>
         <h2 style={{textAlign:'center'}}>8 บทความที่มียอดโหวดเยอะที่สุด</h2>
         <div className="mb-3" style={{textAlign:'center'}}>
-        <span className="bg-white text-white ps-3 pe-3" style={{borderRadius:'10px',fontSize:'0.8rem'}} >__________________</span>
+        <span className=" text-dark ps-3 pe-3" style={{borderRadius:'10px',fontSize:'0.8rem'}} >__________________</span>
         </div>
         </div>
 
@@ -114,98 +114,23 @@ const moreHandle = (event)=>{
       ):(
         //load สำเร็จ
         <div >
-        <div className="ps-5 pe-5 pb-5 pt-3 text-bg-dark cardItem-onload" style={{backgroundColor:'rgba(251,251,251)',borderRadius:'20px'}} >
-        <h2 className='pt-3' style={{textAlign:'center',fontWeight:'bold'}}>
+        <div className="container pb-5 pt-3 cardItem-onload">
+        <h4 className='pt-3' style={{textAlign:'center'}}>
         <span>8 บทความที่มียอดโหวดเยอะที่สุด</span> 
-        </h2>
+        </h4>
         <div className="mb-3" style={{textAlign:'center'}}>
-        <span className="bg-white text-white ps-3 pe-3" style={{borderRadius:'10px',fontSize:'0.8rem'}} >__________________</span>
+        <span className="text-dark ps-3 pe-3" style={{borderRadius:'5px',fontSize:'0.8rem'}} >__________________</span>
         </div>
         <div className="mb-5"></div>
-        <div className="row">
+        <div className="row m-0 card-most-view">
     {cardCurrentPerPage.map((blog,index)=>{
         return (
-          <div className="col-lg-3 col-md-6 col-sm-12 mb-5" key={uuidv4()}>
+          <div className="col-lg-3 col-md-6 col-sm-12 col-10 mb-5" key={uuidv4()}>
 
-          <div className='' style={{zIndex:'1',position:'absolute'}}>
-          {currentPage === 1 && index+1 === 1 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-danger'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+1}
-              </span>
-             </span>
-          </div>
-          }
-           {currentPage === 1 && index+1 === 2 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-danger'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+1}
-              </span>
-             </span>
-          </div>
-          }
-           {currentPage === 1 && index+1 === 3 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-danger'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+1}
-              </span>
-             </span>
-          </div>
-          }
-          {currentPage === 1 && index+1 === 4 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-light'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+1}
-              </span>
-             </span>
-          </div>
-          }
-          {currentPage === 2 && index+1 === 1 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-light'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+5}
-              </span>
-             </span>
-          </div>
-          }
-           {currentPage === 2 && index+1 === 2 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-light'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+5}
-              </span>
-             </span>
-          </div>
-          }
-          {currentPage === 2 && index+1 === 3 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-light'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+5}
-              </span>
-             </span>
-          </div>
-          }
-          {currentPage === 2 && index+1 === 4 &&
-          <div>
-              <span className={'p-2 pt-4 pb-4 bg-light'}
-              style={{borderRadius:'50%'}}>
-              <span className='text-bg-light p-1 pt-3 pb-3' style={{borderRadius:'50%'}}>อันดับ {index+5}
-              </span>
-             </span>
-          </div>
-          }
-          </div>
-
-          <div className="h-100 bg-white" style={{borderRadius:'20px'}} key={index+1}>
+          <div className="h-100 bg-light border border-muted" style={{borderRadius:'5px'}} key={index+1}>
           <Link to={'/blog/'+blog.slug} style={{textDecoration:"none"}} key={uuidv4()}>
             <div>
-            <img className="card-img-top" style={{height:'25vh',borderTopLeftRadius:'20px',borderTopRightRadius:'20px'}} src={blog.image} alt="" />
+            <img className="card-img-top" style={{height:'28vh',borderTopLeftRadius:'5px',borderTopRightRadius:'5px'}} src={blog.image} alt="" />
             </div>
           </Link>
             <div className="card-body ps-3 pt-3 pb-4 text-dark">
@@ -224,11 +149,11 @@ const moreHandle = (event)=>{
               </div>
 
             <Link to={'/blog/'+blog.slug} style={{textDecoration:"none"}} key={uuidv4()}>
-              <h4 className=" pt-1 text-dark"><strong>{blog.title}</strong></h4>
+              <h6 className=" pt-1 text-dark"><strong>{blog.title}</strong></h6>
             </Link>
             </div>
-            <div className="card-body pb-3 ps-3 text-dark" style={{display:"flex",justifyContent:"space-between"}}> 
-              <h6 ><img style={{height:'30px',width:'34px',borderRadius:'50%'}} src={blog.accoutimage}/> {capitalizeFirstLetter(blog.author)}</h6>
+            <div className="card-body mx-3 text-dark" style={{display:"flex",justifyContent:"space-between"}}> 
+              <h6 ><img style={{height:'26px',width:'26px',borderRadius:'50%'}} src={blog.accoutimage}/> <span style={{fontSize:'0.8rem'}}>{capitalizeFirstLetter(blog.author)}</span></h6>
             </div>
             {userFetching() &&
             <div className="card-footer " style={{display:"flex",justifyContent:"center"}}>
@@ -242,10 +167,10 @@ const moreHandle = (event)=>{
       }) 
     }
     
-    {true && state.length > 1 &&
+    {true && state.length > 4 &&
          <div className="mt-1" style={{textAlign:'center'}}>
            <span><h6 style={{display:'inline-block'}}></h6></span> {allPages.map((page)=>{
-              return <button onClick={()=>pageNavigation(page)} className={currentPage === page?"btn btn-outline-light me-2 active ":"btn btn-outline-light me-2 "} key={uuidv4()}>{page}</button>
+              return <button onClick={()=>pageNavigation(page)} className={currentPage === page?"btn btn-outline-light me-2 active border border-muted":"btn btn-outline-light border border-muted text-dark me-2 "} key={uuidv4()}>{page}</button>
             })}
         </div>
       }
